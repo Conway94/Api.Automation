@@ -1,2 +1,2 @@
-# Api.Automation
+# Test.Automation
 Rest Api Automation Solution
