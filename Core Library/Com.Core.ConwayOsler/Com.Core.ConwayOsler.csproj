@@ -48,6 +48,7 @@
       <HintPath>..\packages\System.Collections.Immutable.1.3.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
       <Private>True</Private>
@@ -59,19 +60,32 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\ApiHandler.cs" />
+    <Compile Include="Handlers\Api\ApiHandler.cs" />
+    <Compile Include="Handlers\Client\Actions\Wait.cs" />
+    <Compile Include="Handlers\Client\Actions\Select.cs" />
+    <Compile Include="Handlers\Client\Actions\Launch.cs" />
+    <Compile Include="Handlers\Client\Actions\Text.cs" />
+    <Compile Include="Handlers\Client\Actions\Click.cs" />
+    <Compile Include="Handlers\Client\Helper\SeleniumHelper.cs" />
+    <Compile Include="Interface\Client\Actions\Actions.cs" />
+    <Compile Include="Interface\Client\Actions\Click\Click.cs" />
+    <Compile Include="Interface\Client\Actions\Launch\Launch.cs" />
+    <Compile Include="Interface\Client\Actions\Select\Select.cs" />
+    <Compile Include="Interface\Client\Actions\Text\Text.cs" />
+    <Compile Include="Interface\Client\Actions\Wait\Wait.cs" />
+    <Compile Include="Interface\Client\Client.cs" />
     <Compile Include="Interface\Utility\Utility.cs" />
     <Compile Include="Interface\Api\Api.cs" />
     <Compile Include="Interface\CoreInterface.cs" />
     <Compile Include="Interface\Utility\DeepCompare\DeepCompare.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface\Client\" />
-    <Folder Include="Interface\Sql\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
@@ -81,5 +95,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\NUnit.3.13.2\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.13.2\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets'))" />
   </Target>
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets')" />
 </Project>

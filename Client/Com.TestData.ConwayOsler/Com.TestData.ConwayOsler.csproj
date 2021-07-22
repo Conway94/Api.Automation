@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Com.Core.ConwayOsler">
+      <HintPath>..\..\Core Library\Com.Core.ConwayOsler\bin\Debug\Com.Core.ConwayOsler.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -47,23 +50,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\Select.cs" />
-    <Compile Include="Actions\InsertText.cs" />
-    <Compile Include="Actions\WaitFor.cs" />
-    <Compile Include="Actions\Click.cs" />
-    <Compile Include="Actions\LaunchAction.cs" />
-    <Compile Include="Helper\SeleniumHelper.cs" />
-    <Compile Include="Interface\Actions\Actions.cs" />
-    <Compile Include="Interface\Actions\Click\Click.cs" />
-    <Compile Include="Interface\Actions\Select\Select.cs" />
-    <Compile Include="Interface\Actions\Text\Text.cs" />
-    <Compile Include="Interface\Actions\LaunchUrl\LaunchUrl.cs" />
-    <Compile Include="Interface\Actions\WaitFor\WaitFor.cs" />
-    <Compile Include="Interface\AutomationPractice.cs" />
+    <Compile Include="Actions\Launch\Launch.cs" />
+    <Compile Include="Interface\Page\MyAccount\MyAccount.cs" />
+    <Compile Include="Interface\Page\Page.cs" />
+    <Compile Include="Interface\Page\Home\Home.cs" />
+    <Compile Include="Interface\Page\Registration\Address\Address.cs" />
+    <Compile Include="Interface\Page\Registration\Personal\Personal.cs" />
+    <Compile Include="Interface\Page\Registration\Registration.cs" />
+    <Compile Include="Interface\Page\ShoppingCart\ShoppingCart.cs" />
+    <Compile Include="Interface\Page\Shopping\Shopping.cs" />
+    <Compile Include="Interface\Page\Shopping\TShirts\TShirts.cs" />
+    <Compile Include="Interface\Page\SignIn\SignIn.cs" />
+    <Compile Include="Interface\Quit\Quit.cs" />
+    <Compile Include="Interface\Website.cs" />
+    <Compile Include="Interface\Launch\Launch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Validation\" />
+    <Folder Include="Actions\SignIn\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
