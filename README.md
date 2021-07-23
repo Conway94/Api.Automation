@@ -17,6 +17,13 @@ Please Pull down the following projects from the following location:
 
 You may then use the Tests Explorer in the **Com.Tests.ConwayOsler** project to run the NUnit Tests.
 
+**Note**
+
+Should you require to update the Base Url of the Api, please do so in the **Com.Tests.ConwayOsler** project. 
+
+You will find this in the app.config location.
+
+
 **Test Results** 
 
 2 Bugs Found 
