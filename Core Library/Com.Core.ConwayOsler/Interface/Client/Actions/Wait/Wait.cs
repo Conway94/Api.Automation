@@ -13,5 +13,10 @@ namespace Com.Core.ConwayOsler.Interface.Client.Actions.Wait
     {
       new WaitAction().ForClassName(className);
     }
+
+    public void ForCssSelector(string cssSelector)
+    {
+      new WaitAction().ForCssSelector(cssSelector);
+    }
   }
 }

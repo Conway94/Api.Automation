@@ -3,19 +3,20 @@ using NUnit.Framework;
 
 namespace Regression
 {
-  [Order(5)]
+  [Order(4)]
   [TestFixture]
-  public class ShoppingCart : Helper
+  public class Shopping : Helper
   {
-    [TestCase(Description = "Valid Verify Order")]
-    public void ValidOrderShirt()
+    [TestCase(Description = "Valid Order T-Shirt")]
+    public void ValidOrder()
     {
-      //Validate Shopping Cart
-      Website.Page.ShoppingCart.WaitForShoppingCartPage();
-      Website.Page.ShoppingCart.ValidateNumItems("1");
-      Website.Page.ShoppingCart.ValidateProductName("Faded Short Sleeve T-shirts");
-      Website.Page.ShoppingCart.ValidateInStock();
-      Website.Page.ShoppingCart.ClickProceedToCheckOut();
+      Website.Page.Home.ClickTShirts();
+      Website.Page.Home.WaitForTShirtCategory();
+      Website.Page.Shopping.TShirts.ClickFadedShortSleeveTShirt();
+      Website.Page.Shopping.TShirts.ClickColor();
+      Website.Page.Shopping.ClickAddToCart();
+      Website.Page.Shopping.WaitForShoppingCart();
+      Website.Page.Shopping.ClickProceedToCheckOut();
     }
   }
 }

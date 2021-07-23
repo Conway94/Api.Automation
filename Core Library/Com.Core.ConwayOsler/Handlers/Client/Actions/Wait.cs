@@ -16,5 +16,10 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
     {
       Driver.FindElement(By.ClassName(className));
     }
+
+    public void ForCssSelector(string cssSelector)
+    {
+      Driver.FindElement(By.CssSelector(cssSelector));
+    }
   }
 }

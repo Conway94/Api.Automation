@@ -13,7 +13,7 @@ namespace Regression
     public void ValidRegistration()
     {
       Website.Page.Registration.WaitForRegistrationForm();
-
+      
       //User Details
       Website.Page.Registration.Personal.ClickGenderToggle();
       Website.Page.Registration.Personal.EnterFirstName(RegistrationData.firstName);
@@ -32,9 +32,6 @@ namespace Regression
       Website.Page.Registration.Personal.ClickSpecialOfferToggle();
 
       //Address Details
-      Website.Page.Registration.Address.EnterFirstName(RegistrationData.firstName);
-      Website.Page.Registration.Address.EnterLastName(RegistrationData.lastName);
-
       Website.Page.Registration.Address.EnterCompany(RegistrationData.company);
       Website.Page.Registration.Address.EnterAddressField1(RegistrationData.address1);
       Website.Page.Registration.Address.EnterAddressField2(RegistrationData.address2);

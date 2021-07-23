@@ -23,5 +23,10 @@ namespace Com.Core.ConwayOsler.Interface.Client.Actions.Click
     {
       new ClickAction().ClickElementXpath(xpath);
     }
+
+    public void CssSelector(string cssSelector)
+    {
+      new ClickAction().ClickCssSelector(cssSelector);
+    }
   }
 }

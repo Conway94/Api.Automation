@@ -69,5 +69,21 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
         throw;
       }
     }
+
+    public void ClickCssSelector(string cssSelector)
+    {
+      try
+      {
+        IWebElement button = Driver.FindElement(By.CssSelector(cssSelector));
+        button.Click();
+        Console.WriteLine($"Successfully Clicked {cssSelector}");
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine($"Attempt to Click {cssSelector} was unsuccessful");
+        Console.WriteLine(e);
+        throw;
+      }
+    }
   }
 }

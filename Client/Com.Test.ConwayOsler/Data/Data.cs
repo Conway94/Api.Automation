@@ -39,5 +39,11 @@ namespace Com.Test.ConwayOsler.Data
       public static string month = "March";
       public static string year = "1946";
     }
+
+    public class MyAccountData
+    {
+      public static string oldPassword = RegistrationData.password;
+      public static string newPassword = "FoodIs4Life";
+    }
   }
 }

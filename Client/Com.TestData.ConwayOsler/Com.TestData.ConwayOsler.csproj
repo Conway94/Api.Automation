@@ -52,12 +52,16 @@
   <ItemGroup>
     <Compile Include="Actions\Launch\Launch.cs" />
     <Compile Include="Interface\Page\MyAccount\MyAccount.cs" />
+    <Compile Include="Interface\Page\Order\Address\Address.cs" />
+    <Compile Include="Interface\Page\Order\Order.cs" />
+    <Compile Include="Interface\Page\Order\Payment\Payment.cs" />
+    <Compile Include="Interface\Page\Order\Shipping\Shipping.cs" />
     <Compile Include="Interface\Page\Page.cs" />
     <Compile Include="Interface\Page\Home\Home.cs" />
     <Compile Include="Interface\Page\Registration\Address\Address.cs" />
     <Compile Include="Interface\Page\Registration\Personal\Personal.cs" />
     <Compile Include="Interface\Page\Registration\Registration.cs" />
-    <Compile Include="Interface\Page\ShoppingCart\ShoppingCart.cs" />
+    <Compile Include="Interface\Page\Order\Summary\Summary.cs" />
     <Compile Include="Interface\Page\Shopping\Shopping.cs" />
     <Compile Include="Interface\Page\Shopping\TShirts\TShirts.cs" />
     <Compile Include="Interface\Page\SignIn\SignIn.cs" />
@@ -68,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions\SignIn\" />
+    <Folder Include="Interface\Page\Order\SignIn\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

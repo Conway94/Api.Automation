@@ -62,17 +62,20 @@
     <Compile Include="Helper\Helper.cs" />
     <Compile Include="Helper\RegressionHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Regression\MyAccount\MyAccount.cs" />
+    <Compile Include="Tests\Regression\Order\PaymentDetails.cs" />
+    <Compile Include="Tests\Regression\Order\ShippingDetails.cs" />
+    <Compile Include="Tests\Regression\Order\AddressDetails.cs" />
     <Compile Include="Tests\Regression\ShoppingCart\ShoppingCart.cs" />
     <Compile Include="Tests\Regression\SignIn\Sign-In.cs" />
     <Compile Include="Tests\Regression\Launch\Launch.cs" />
     <Compile Include="Tests\Regression\Registration\Registration.cs" />
-    <Compile Include="Tests\Regression\Order\OrderShirt.cs" />
+    <Compile Include="Tests\Regression\Order\SummaryDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tests\Regression\MyAccount\" />
     <Folder Include="Tests\Regression\Registration\AddressDetails\" />
     <Folder Include="Tests\Regression\Registration\DateOfBirth\" />
     <Folder Include="Tests\Regression\Registration\NewsLetter\" />
