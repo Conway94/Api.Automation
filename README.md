@@ -3,11 +3,11 @@
 **Getting Started**
 
 Please Pull down the following projects from the following location: 
-Location : **API/** 
-Tests Project : Com.Tests.ConwayOsler
-Test Data Project : Com.TestData.ConwayOsler
-Location : **Core Library/**
-Shared Utility Library : Com.Core.ConwayOsler
+- Location : **API/** 
+  - Tests Project : Com.Tests.ConwayOsler
+  - Test Data Project : Com.TestData.ConwayOsler
+- Location : **Core Library/**
+  - Shared Utility Library : Com.Core.ConwayOsler
 
 **Setup Steps**
 
@@ -29,17 +29,17 @@ You may then use the Tests Explorer in the **Com.Tests.ConwayOsler** project to 
 **Getting Started**
 
 Please Pull down the following projects from the following location: 
-Location : **Client /** 
-Tests Project : Com.Tests.ConwayOsler
-Test Data Project : Com.TestData.ConwayOsler
-Location : **Core Library/**
-Shared Utility Library : Com.Core.ConwayOsler
+- Location : **Client/** 
+  - Tests Project : Com.Tests.ConwayOsler
+  - Test Data Project : Com.TestData.ConwayOsler
+- Location : **Core Library/**
+  - Shared Utility Library : Com.Core.ConwayOsler
 
 **Setup Steps**
 
-Please Build the Com.Core.ConwayOsler project first
-Then reference the Com.Core.ConwayOsler **.dll** in the Com.TestData.ConwayOsler project and build.
-Finally reference the Com.TestData.ConwayOsler **.dll** & then Com.Core.ConwayOsler **.dll** in the Com.Tests.ConwayOsler project and build.
+1. Please Build the Com.Core.ConwayOsler project first
+2. Then reference the Com.Core.ConwayOsler **.dll** in the Com.TestData.ConwayOsler project and build.
+3. Finally reference the Com.TestData.ConwayOsler **.dll** & then Com.Core.ConwayOsler **.dll** in the Com.Tests.ConwayOsler project and build.
 
 You may then use the Tests Explorer in the **Com.Tests.ConwayOsler** project to run the NUnit Tests.
 
