@@ -1,11 +1,16 @@
-﻿using System;
-using Com.Core.ConwayOsler.Handlers.Client.Helper;
+﻿using Com.Core.ConwayOsler.Handlers.Client.Helper;
 using OpenQA.Selenium;
+using System;
 
 namespace Com.Core.ConwayOsler.Handlers.Client.Actions
 {
   public class SelectAction : SeleniumHelper
   {
+    /// <summary>
+    /// Attemps to opens the drop down element and select the specified value within.
+    /// </summary>
+    /// <param name="elementId">Represents the id element derived from the p.o.m.</param>
+    /// <param name="selectValue">Represents the value to be selected from the drop down element.</param>
     public void DropDownSelect(string elementId, string selectValue)
     {
       try

@@ -6,6 +6,10 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
 {
   public class ClickAction : SeleniumHelper
   {
+    /// <summary>
+    /// Attempts to simulate a click event on a specified class element.
+    /// </summary>
+    /// <param name="elementClass">Represents the class element derived from the p.o.m.</param>
     public void ClickElementClass(string elementClass)
     {
       try
@@ -22,6 +26,11 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
       }
     }
 
+    /// <summary>
+    /// Attempts to simulate a click event on a specified class element by it's text.
+    /// </summary>
+    /// <param name="elementClass">Represents the class element derived from the p.o.m.</param>
+    /// <param name="title">Represents the class title value derived from the p.o.m.</param>
     public void ClickElementClass(string elementClass, string title)
     {
       try
@@ -38,6 +47,10 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
       }
     }
 
+    /// <summary>
+    /// Attempts to simulate a click event on a specified id element.
+    /// </summary>
+    /// <param name="elementId">Represents the id element derived from the p.o.m.</param>
     public void ClickElementId(string elementId)
     {
       try
@@ -54,6 +67,10 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
       }
     }
 
+    /// <summary>
+    /// Attempts to simulate a click event on a specified xpath element.
+    /// </summary>
+    /// <param name="xpath">Represents the xpath element derived from the p.o.m.</param>
     public void ClickElementXpath(string xpath)
     {
       try
@@ -70,6 +87,10 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
       }
     }
 
+    /// <summary>
+    /// Attempts to simulate a click event on a specified selector element.
+    /// </summary>
+    /// <param name="cssSelector">Represents the selector element derived from the p.o.m.</param>
     public void ClickCssSelector(string cssSelector)
     {
       try

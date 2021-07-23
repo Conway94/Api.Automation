@@ -5,6 +5,10 @@ namespace Com.Core.ConwayOsler.Handlers.Client.Actions
 {
   public class LaunchAction : SeleniumHelper
   {
+    /// <summary>
+    /// Setup of the selenium driver and launcher of the specified website.
+    /// </summary>
+    /// <param name="launchUrl">The website url to be launched.</param>
     public void Chrome(string launchUrl)
     {
       try
