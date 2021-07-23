@@ -1,5 +1,4 @@
-﻿using Com.Core.ConwayOsler.Handlers.Client.Helper;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using static Com.Test.ConwayOsler.Data.Data;
 using static Com.Test.ConwayOsler.Helper.RegressionHelper;
 
