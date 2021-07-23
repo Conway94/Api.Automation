@@ -9,9 +9,9 @@ namespace Com.TestData.ConwayOsler.Interface.Page.MyAccount
     private const string _myPersonalInformationButton = "#center_column > div > div:nth-child(1) > ul > li:nth-child(4) > a";
     private const string _yourPersonalInformationText = "#center_column > div > h1";
     private const string _firstNameField = "firstname";
-    private const string _oldPassword = "old_passwd";
-    private const string _newPassword = "passwd";
-    private const string _confirmPassword = "confirmation";
+    private const string _oldPasswordField = "old_passwd";
+    private const string _newPasswordField = "passwd";
+    private const string _confirmPasswordField = "confirmation";
     private const string _saveButton = "#center_column > div > form > fieldset > div:nth-child(11) > button";
 
     public void WaitForMyAccountPage(string cssSelector = _myAccountPage)
@@ -34,17 +34,17 @@ namespace Com.TestData.ConwayOsler.Interface.Page.MyAccount
       Client.Actions.Text.InsertId(elementId, text);
     }
 
-    public void InsertOldPassword(string text, string elementId = _oldPassword)
+    public void InsertOldPassword(string text, string elementId = _oldPasswordField)
     {
       Client.Actions.Text.InsertId(elementId, text);
     }
 
-    public void InsertNewPassword(string text, string elementId = _newPassword)
+    public void InsertNewPassword(string text, string elementId = _newPasswordField)
     {
       Client.Actions.Text.InsertId(elementId, text);
     }
 
-    public void InsertConfirmPassword(string text, string elementId = _confirmPassword)
+    public void InsertConfirmPassword(string text, string elementId = _confirmPasswordField)
     {
       Client.Actions.Text.InsertId(elementId, text);
     }

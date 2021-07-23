@@ -5,9 +5,9 @@ namespace Com.TestData.ConwayOsler.Interface.Page.Order.Payment
   public class Payment : CoreInterface
   {
     private const string _paymentPage = "#step_end";
-    private const string _payByBankWire = "bankwire";
+    private const string _payByBankWireButton = "bankwire";
     private const string _bankWirePaymentPage = "page-subheading";
-    private const string _confirmOrder = "#cart_navigation > button";
+    private const string _confirmOrderButton = "#cart_navigation > button";
     private const string _orderComplete = "#center_column > div > p > strong";
 
     public void WaitForPaymentPage(string cssSelector = _paymentPage)
@@ -15,7 +15,7 @@ namespace Com.TestData.ConwayOsler.Interface.Page.Order.Payment
       Client.Actions.Wait.ForCssSelector(cssSelector);
     }
 
-    public void ClickPayByBankWire(string elementClass = _payByBankWire)
+    public void ClickPayByBankWire(string elementClass = _payByBankWireButton)
     {
       Client.Actions.Click.ElementClass(elementClass);
     }
@@ -25,7 +25,7 @@ namespace Com.TestData.ConwayOsler.Interface.Page.Order.Payment
       Client.Actions.Text.ValidateClass(elementClass, text);
     }
 
-    public void ClickConfirmOrder(string cssSelector = _confirmOrder)
+    public void ClickConfirmOrder(string cssSelector = _confirmOrderButton)
     {
       Client.Actions.Click.CssSelector(cssSelector);
     }

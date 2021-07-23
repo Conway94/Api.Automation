@@ -6,7 +6,7 @@ namespace Com.TestData.ConwayOsler.Interface.Page.Order.Shipping
   {
     private const string _shippingPage = "#order_step > li.step_current.four";
     private const string _termsOfServiceCheckBox = "checker";
-    private const string _proceedToCheckOut = "//*[@id=\"form\"]/p/button";
+    private const string _proceedToCheckOutButton = "//*[@id=\"form\"]/p/button";
 
     public void WaitForShippingPage(string cssSelector = _shippingPage)
     {
@@ -18,7 +18,7 @@ namespace Com.TestData.ConwayOsler.Interface.Page.Order.Shipping
       Client.Actions.Click.ElementClass(elementClass);
     }
 
-    public void ClickProceedToCheckOut(string xpath = _proceedToCheckOut)
+    public void ClickProceedToCheckOut(string xpath = _proceedToCheckOutButton)
     {
       Client.Actions.Click.ElementXpath(xpath);
     }

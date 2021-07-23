@@ -4,10 +4,10 @@ namespace Com.TestData.ConwayOsler.Interface.Page.SignIn
 {
   public class SignIn : CoreInterface
   {
-    private const string _emailAddress = "email_create";
+    private const string _emailAddressField = "email_create";
     private const string _createAccountButton = "SubmitCreate";
 
-    public void EnterEmailAddress(string userEmail, string elementId = _emailAddress)
+    public void EnterEmailAddress(string userEmail, string elementId = _emailAddressField)
     {
       Client.Actions.Text.InsertId(elementId, userEmail);
     }

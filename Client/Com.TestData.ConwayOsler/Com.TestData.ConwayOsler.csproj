@@ -72,7 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions\SignIn\" />
-    <Folder Include="Interface\Page\Order\SignIn\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
